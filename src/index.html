@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector de Velocidades</title>
+</head>
+
+<body>
+<header>
+    <h2>Selector de Velocidades</h2>
+</header>
+<div class="container">
+    <div class="barra uno">
+        <h3>+</h3>
+        <h3>+</h3>
+        <h3>+</h3>
+        <h3>+</h3>
+        <h3>+</h3>
+        <h3>+</h3>
+        <h3>+</h3>
+        <h3>+</h3>
+    </div>
+    <div id="anima" class="anima">
+        <img src="particle.png" id="particle" class="particle" />
+        <div id="linea2" class="linea2">
+            <img src="linea.png"  class="linea" />
+            <img src="linea.png"  class="linea" />
+            <img src="linea.png"  class="linea" />
+            <img src="linea.png"  class="linea" />
+            <img src="linea.png"  class="linea" />
+            <img src="linea.png"  class="linea" />
+
+            <img src="linea.png"  class="linea" />
+            <img src="linea.png"  class="linea" />
+            <img src="linea.png"  class="linea" />
+        </div>
+    </div>
+    <div class="barra dos">
+        <h3>-</h3>
+        <h3>-</h3>
+        <h3>-</h3>
+        <h3>-</h3>
+        <h3>-</h3>
+        <h3>-</h3>
+        <h3>-</h3>
+        <h3>-</h3>
+    </div>
+    <div class="container2">
+        <div class="controls">
+            <div class="back">
+                <form>
+                    <label class="eu">Valor del campo electrico</label>
+                    <input type="text" placeholder="E" id="E" />
+                    <label class="eu">Valor del campo Magnetico</label>
+                    <input type="text" placeholder="B" id="B" />
+                </form>
+                <button onclick="calcular()" type="submit">
+                    <b>Visualizar</b>
+                </button>
+            </div>
+        </div>
+        <div class="results">
+            <div class="back">
+                <h3 class="">Velocidad adquirida</h3>
+                <label id="resultado"></label>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>
+                Cuando una partícula cargada penetra, con una cierta velocidad, en
+                el selector de velocidades, la fuerza eléctrica y la fuerza
+                magnética que actúan sobre ella tienen la misma intensidad (el mismo
+                módulo), la misma dirección, pero sentidos contrarios. Es decir, la
+                fuerza magnética y la fuerza eléctrica se compensan, permitiendo que
+                la partícula atraviese el selector sin sufrir desviaciones en su
+                trayectoria.
+            </p>
+            <p>
+                Solamente las partículas cuya velocidad tenga el valor dado por la
+                relación anterior atravesarán el selector sin sufrir desviación y
+                serán recogidas a la salida. El resto de partículas, con velocidades
+                diferentes a la dada por la relación v = (E/B) , se desviarán de su
+                trayectoria y quedarán retenidas en el interior del selector.
+            </p>
+        </div>
+        <div class="botones">
+            <button onclick="mostrar()" type="submit" id=""> <b id="Visualizar">Visualizar explicación</b></button>
+        </div>
+    </footer>
+</div>
+<script src="Script.js"></script>
+</body>
+</html>
